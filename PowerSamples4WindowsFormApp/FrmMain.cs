@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PowerSamples4WindowsFormApp.Samples;
 
 namespace PowerSamples4WindowsFormApp
 {
-    public partial class Form1 : Form
+    public partial class FrmMain : Form
     {
-        public Form1()
+        public FrmMain()
         {
             InitializeComponent();
+
+            StartPosition = FormStartPosition.CenterScreen;
+
+            btn01.Click += (o, ex) => { new Form01().ShowDialog(); };
+
         }
     }
 }
