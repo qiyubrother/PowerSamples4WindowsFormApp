@@ -27,6 +27,8 @@ namespace PowerSamples4WindowsFormApp.Samples
 
         /// <summary>
         /// 异步执行工作任务，将执行结果更新到主线程UI控件
+        /// 如果在async函数中调用工作线程，则需要在工作线程前加上await修饰符。
+        /// 本示例的async和await可以去掉。
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
