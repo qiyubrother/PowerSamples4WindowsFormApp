@@ -42,7 +42,8 @@ namespace PowerSamples4WindowsFormApp.Samples
                     System.Threading.Thread.Sleep(50);
                 }
                 // 更新UI
-                UpdateUI((o, ex) => { textBox1.Text = DateTime.Now.ToString(); });
+                UpdateUI((o, ex) => { textBox1.Text = DateTime.Now.ToString(); }); // 方法1
+                //Invoke(new Action(()=> { textBox1.Text = DateTime.Now.ToString(); })); // 方法2
             });
         }
 
